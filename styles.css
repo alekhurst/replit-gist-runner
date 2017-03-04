@@ -1,0 +1,23 @@
+.replit-btn {
+  border-style: none;
+  outline: none;
+}
+.replit-btn:hover {
+  background-color: #EEEEEE;
+}
+
+.replit-btn .txt {
+  display: inline-block;
+}
+
+.replit-btn .img {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  margin-left: 5px;
+  width: 14px;
+  height: 14px;
+  background-image: url("https://avatars2.githubusercontent.com/u/983194?v=3&s=400");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}

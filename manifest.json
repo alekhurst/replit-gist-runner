@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "Replit Gist Runner",
+  "version": "0.1.0",
+  "description": "Lateral blog post demo extension",
+
+  "content_scripts": [
+    {
+      "css": ["styles.css"],
+      "js": ["gist.js"],
+      "matches": ["https://gist.github.com/*"]
+    },
+    {
+      "js": ["gist-raw.js"],
+      "matches": ["https://gist.githubusercontent.com/*"]
+    },
+    {
+      "js": ["replit.js"],
+      "matches": ["https://repl.it/*"]
+    }
+  ],
+
+  "permissions": [
+    "storage"
+  ]
+}
