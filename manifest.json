@@ -5,6 +5,14 @@
   "version": "0.1.0",
   "description": "Lateral blog post demo extension",
 
+  "browser_action": {
+    "default_icon": "logo32px.png"
+  },
+
+  "background" : {
+    "scripts" : ["background.js"]
+  },
+
   "content_scripts": [
     {
       "css": ["styles.css"],
@@ -22,6 +30,9 @@
   ],
 
   "permissions": [
-    "storage"
+    "storage",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
   ]
 }

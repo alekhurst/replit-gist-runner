@@ -10,6 +10,5 @@ chrome.storage.sync.get(['redirectToReplit', 'replitLang'], function(storage) {
     runOnReplit: true,
   });
 
-  window.location.href = 'https://repl.it/languages/javascript' +
-    storage.replitLang;
+  window.location.href = 'https://repl.it/languages/' + storage.replitLang;
 });
